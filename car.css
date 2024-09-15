@@ -1,0 +1,97 @@
+body {
+  position: relative;
+  background-image: url(wallpaperflare.com_wallpaper.jpg);
+  background-repeat: repeat-x;
+  width: 2400px;
+  height: 103px;
+  background-size: cover;
+  overflow: hidden;
+  margin-top: 45%;
+  padding: auto;
+  animation: bgmove 2s linear infinite;
+}
+
+@keyframes bgmove {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+.s {
+  position: absolute;
+  width: 5139px;
+  height: 300px;
+  background-image: url(road.jpg);
+  animation: road 2s linear infinite;
+  left: -10%;
+}
+
+@keyframes road {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 5139px;
+  }
+}
+
+.car {
+  position: absolute;
+  width: 660px;
+  height: 125px;
+  background-image: url(NicePng_lamborghini-car-png_2547288.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 100%;
+}
+
+.tyre {
+  background-color: yellowgreen;
+  background-image: url(wheel.jpg);
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  animation: tyre 0.5s linear infinite;
+}
+
+@keyframes tyre {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.left {
+  position: absolute;
+  left: 66px;
+  top: 52px;
+}
+
+.right {
+  position: absolute;
+  left: 330px;
+  top: 52px;
+}
+
+#button {
+  background-color: #0c3f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#button:hover {
+  background-color: #2980b9;
+}
+
+#audio {
+  display: none;
+}
